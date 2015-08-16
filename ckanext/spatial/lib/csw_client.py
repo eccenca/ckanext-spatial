@@ -10,6 +10,8 @@ from owslib.fes import PropertyIsEqualTo
 from owslib.fes import PropertyIsLike
 from owslib.fes import PropertyIsBetween
 from owslib.fes import PropertyIsEqualTo
+from owslib.fes import BBox
+from owslib.fes import PropertyIsNotEqualTo
 
 
 log = logging.getLogger(__name__)
@@ -242,5 +244,20 @@ class CswService(OwsService):
                     propertyname=constraint_config['propertyname'],
                     literal=constraint_config['literal']
                 )
+        elif(constraint_config['type'] == 'PropertyIsNotEqualTo'):
+            if(not ('propertyname' in constraint_config and 'literal' in constraint_config)):
+                #silent fail --> config is not correct
+                return False
+            else:
+                return PropertyIsNotEqualTo(
+                    propertyname=constraint_config['propertyname'],
+                    literal=constraint_config['literal']
+                )
+        elif(constraint_config['type'] == 'BoundingBox'):
+            if(not ('LowerCorner' in constraint_config and 'UpperCorner' in constraint_config)):
+                return False
+            else:
+                bbox = constraint_config['LowerCorner'].split() + constraint_config['UpperCorner'].split()
+                return BBox(bbox)
         else:
             return False
