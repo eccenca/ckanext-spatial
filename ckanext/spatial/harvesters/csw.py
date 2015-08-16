@@ -88,11 +88,12 @@ class CSWHarvester(SpatialHarvester, SingletonPlugin):
 
         # extract cql filter if any
         cql = self.source_config.get('cql')
+        constraints = self.source_config.get('constraints')
 
         log.debug('Starting gathering for %s' % url)
         guids_in_harvest = set()
         try:
-            for identifier in self.csw.getidentifiers(page=10, outputschema=self.output_schema(), cql=cql):
+            for identifier in self.csw.getidentifiers(page=10, outputschema=self.output_schema(), cql=cql, constraints=constraints):
                 try:
                     log.info('Got identifier %s from the CSW', identifier)
                     if identifier is None:
@@ -184,4 +185,3 @@ class CSWHarvester(SpatialHarvester, SingletonPlugin):
 
     def _setup_csw_client(self, url):
         self.csw = CswService(url)
-

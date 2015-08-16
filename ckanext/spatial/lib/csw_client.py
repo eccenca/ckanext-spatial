@@ -7,6 +7,7 @@ import logging
 
 from owslib.etree import etree
 from owslib.fes import PropertyIsEqualTo
+from owslib.fes import PropertyIsLike
 
 log = logging.getLogger(__name__)
 
@@ -17,14 +18,14 @@ class OwsService(object):
     def __init__(self, endpoint=None):
         if endpoint is not None:
             self._ows(endpoint)
-            
+
     def __call__(self, args):
         return getattr(self, args.operation)(**self._xmd(args))
-    
+
     @classmethod
     def _operations(cls):
         return [x for x in dir(cls) if not x.startswith("_")]
-    
+
     def _xmd(self, obj):
         md = {}
         for attr in [x for x in dir(obj) if not x.startswith("_")]:
@@ -42,7 +43,7 @@ class OwsService(object):
             else:
                 md[attr] = self._xmd(val)
         return md
-        
+
     def _ows(self, endpoint=None, **kw):
         if not hasattr(self, "_Implementation"):
             raise NotImplementedError("Needs an Implementation")
@@ -51,7 +52,7 @@ class OwsService(object):
                 raise ValueError("Must specify a service endpoint")
             self.__ows_obj__ = self._Implementation(endpoint)
         return self.__ows_obj__
-    
+
     def getcapabilities(self, debug=False, **kw):
         ows = self._ows(**kw)
         caps = self._xmd(ows)
@@ -60,7 +61,7 @@ class OwsService(object):
             if "response" in caps: del caps["response"]
         if "owscommon" in caps: del caps["owscommon"]
         return caps
-    
+
 class CswService(OwsService):
     """
     Perform various operations on a CSW service
@@ -95,11 +96,11 @@ class CswService(OwsService):
 
     def getidentifiers(self, qtype=None, typenames="csw:Record", esn="brief",
                        keywords=[], limit=None, page=10, outputschema="gmd",
-                       startposition=0, cql=None, **kw):
+                       startposition=0, cql=None, constraints=[], **kw):
         from owslib.csw import namespaces
-        constraints = []
         csw = self._ows(**kw)
 
+        constraints = self._parse_constraints(constraints)
         if qtype is not None:
            constraints.append(PropertyIsEqualTo("dc:type", qtype))
 
@@ -182,3 +183,15 @@ class CswService(OwsService):
         record["xml"] = '<?xml version="1.0" encoding="UTF-8"?>\n' + record["xml"]
         record["tree"] = mdtree
         return record
+
+    def _parse_constraints(self, constraints_config):
+        constraints_parsed = []
+        for constraint in constraints_config:
+            if(constraint['type'] == 'PropertyIsLike'):
+                constraints_parsed.append(
+                    PropertyIsLike(
+                        propertyname=constraint['propertyname'],
+                        literal=constraint['literal']
+                    )
+                )
+        return constraints_parsed
