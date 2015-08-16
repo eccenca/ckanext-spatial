@@ -9,6 +9,7 @@ from owslib.etree import etree
 from owslib.fes import PropertyIsEqualTo
 from owslib.fes import PropertyIsLike
 from owslib.fes import PropertyIsBetween
+from owslib.fes import PropertyIsEqualTo
 
 
 log = logging.getLogger(__name__)
@@ -231,6 +232,15 @@ class CswService(OwsService):
                     propertyname=constraint_config['propertyname'],
                     lower=constraint_config['lower'],
                     upper=constraint_config['upper']
+                )
+        elif(constraint_config['type'] == 'PropertyIsEqualTo'):
+            if(not ('propertyname' in constraint_config and 'literal' in constraint_config)):
+                #silent fail --> config is not correct
+                return False
+            else:
+                return PropertyIsEqualTo(
+                    propertyname=constraint_config['propertyname'],
+                    literal=constraint_config['literal']
                 )
         else:
             return False
