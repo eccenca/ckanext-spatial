@@ -8,6 +8,8 @@ import logging
 from owslib.etree import etree
 from owslib.fes import PropertyIsEqualTo
 from owslib.fes import PropertyIsLike
+from owslib.fes import PropertyIsBetween
+
 
 log = logging.getLogger(__name__)
 
@@ -186,12 +188,49 @@ class CswService(OwsService):
 
     def _parse_constraints(self, constraints_config):
         constraints_parsed = []
-        for constraint in constraints_config:
-            if(constraint['type'] == 'PropertyIsLike'):
-                constraints_parsed.append(
-                    PropertyIsLike(
-                        propertyname=constraint['propertyname'],
-                        literal=constraint['literal']
-                    )
-                )
+        for constraint_group_config in constraints_config:
+            if(isinstance(constraint_group_config, list)):
+                constraint_group = self._parse_constraint_group(constraint_group_config)
+                if(constraint_group):
+                    constraints_parsed.append(constraint_group)
+            else:
+                constraint = self._parse_constraint(constraint_group_config)
+                if(constraint):
+                    constraints_parsed.append(constraint)
         return constraints_parsed
+
+    def _parse_constraint_group(self, constraint_group_config):
+        """
+            The group is correspond to AND clause, i.e.,
+            all of the element in the group should be satisfied
+            at the same time
+        """
+        constraints_parsed = []
+        for constraint_config in constraint_group_config:
+            constraint = self._parse_constraint(constraint_config)
+            if(constraint):
+                constraints_parsed.append(constraint)
+        return constraints_parsed
+
+    def _parse_constraint(self, constraint_config):
+        if(constraint_config['type'] == 'PropertyIsLike'):
+            if(not ('propertyname' in constraint_config and 'literal' in constraint_config)):
+                #silent fail --> config is not correct
+                return False
+            else:
+                return PropertyIsLike(
+                    propertyname=constraint_config['propertyname'],
+                    literal=constraint_config['literal']
+                )
+        elif(constraint_config['type'] == 'PropertyIsBetween'):
+            if(not ('propertyname' in constraint_config and 'lower' in constraint_config and 'upper' in constraint_config)):
+                #silent fail --> config is not correct
+                return False
+            else:
+                return PropertyIsBetween(
+                    propertyname=constraint_config['propertyname'],
+                    lower=constraint_config['lower'],
+                    upper=constraint_config['upper']
+                )
+        else:
+            return False
