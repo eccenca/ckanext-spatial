@@ -237,6 +237,48 @@ class ISOResponsibleParty(ISOElement):
                     ],
                     multiplicity="0..1",
                 ),
+                ISOElement(
+                    name="delivery-point",
+                    search_paths=[
+                        "gmd:address/gmd:CI_Address/gmd:deliveryPoint/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
+                ISOElement(
+                    name="administrative-area",
+                    search_paths=[
+                        "gmd:address/gmd:CI_Address/gmd:administrativeArea/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
+                ISOElement(
+                    name="postal-code",
+                    search_paths=[
+                        "gmd:address/gmd:CI_Address/gmd:postalCode/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
+                ISOElement(
+                    name="country",
+                    search_paths=[
+                        "gmd:address/gmd:CI_Address/gmd:country/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
+                ISOElement(
+                    name="phone",
+                    search_paths=[
+                        "gmd:phone/gmd:CI_Telephone/gmd:voice/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
+                ISOElement(
+                    name="facsimile",
+                    search_paths=[
+                        "gmd:phone/gmd:CI_Telephone/gmd:facsimile/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
                 ISOResourceLocator(
                     name="online-resource",
                     search_paths=[
