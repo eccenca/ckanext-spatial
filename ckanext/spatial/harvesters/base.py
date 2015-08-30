@@ -203,6 +203,8 @@ class SpatialHarvester(HarvesterBase):
         :rtype: dict
         '''
 
+        #import ipdb; ipdb.set_trace()
+
         tags = []
         if 'tags' in iso_values:
             for tag in iso_values['tags']:
@@ -251,7 +253,6 @@ class SpatialHarvester(HarvesterBase):
             'spatial-reference-system',
             'guid',
             # Usefuls
-            'dataset-reference-date',
             'metadata-language',  # Language
             'metadata-date',  # Released
             'coupled-resource',
@@ -260,6 +261,11 @@ class SpatialHarvester(HarvesterBase):
             'spatial-data-service-type',
         ]:
             extras[name] = iso_values[name]
+
+        #Unpacking 'dataset-reference-date',
+        for date in iso_values['dataset-reference-date']:
+            extras_date_key = 'dataset-reference-date-'+date['type']
+            extras[extras_date_key] = date['value']
 
         if len(iso_values.get('progress', [])):
             extras['progress'] = iso_values['progress'][0]
@@ -286,6 +292,7 @@ class SpatialHarvester(HarvesterBase):
                 extras['licence_url'] = license_url_extracted
 
         extras['access_constraints'] = iso_values.get('limitations-on-public-access', '')
+        extras['access_constraints'] = ', '.join(extras['access_constraints'])
 
         # Grpahic preview
         browse_graphic = iso_values.get('browse-graphic')
