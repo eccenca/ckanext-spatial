@@ -318,13 +318,13 @@ class SpatialHarvester(HarvesterBase):
                     "Role": organization.get('role', ''),
                     "Organisation": organization.get('organisation-name', ''),
                     "Position": organization.get('position-name', ''),
-                    "Phone": contactInfo.get('phone', ''),
-                    "Facsimile": contactInfo.get('facsimile', ''),
-                    "Delivery point": contactInfo.get('delivery-point', ''),
+                    "Phone Number": contactInfo.get('phone', ''),
+                    "Fax Number": contactInfo.get('facsimile', ''),
+                    "Street Address": contactInfo.get('delivery-point', ''),
                     "City": contactInfo.get('city', ''),
-                    "Administrative area": contactInfo.get('administrative-area', ''),
+                    "Administrative Area": contactInfo.get('administrative-area', ''),
                     "Country": contactInfo.get('country', ''),
-                    "E-Mail address": contactInfo.get('email', '')
+                    "E-Mail Address": contactInfo.get('email', '')
                 }
                 parties.append(party)
             extras['responsible-party'] = parties
