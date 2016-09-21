@@ -12,7 +12,8 @@ from owslib.fes import PropertyIsBetween
 from owslib.fes import PropertyIsEqualTo
 from owslib.fes import BBox
 from owslib.fes import PropertyIsNotEqualTo
-
+from owslib.fes import SortBy
+from owslib.fes import SortProperty
 
 log = logging.getLogger(__name__)
 
@@ -72,6 +73,11 @@ class CswService(OwsService):
     Perform various operations on a CSW service
     """
     from owslib.csw import CatalogueServiceWeb as _Implementation
+
+    def __init__(self, endpoint=None):
+        super(CswService, self).__init__(endpoint)
+        self.sortby = SortBy([SortProperty('dc:identifier')])
+
     def getrecords(self, qtype=None, keywords=[],
                    typenames="csw:Record", esn="brief",
                    skip=0, count=10, outputschema="gmd", **kw):
@@ -89,6 +95,7 @@ class CswService(OwsService):
             "startposition": skip,
             "maxrecords": count,
             "outputschema": namespaces[outputschema],
+            "sortby": self.sortby
             }
         log.info('Making CSW request: getrecords2 %r', kwa)
         csw.getrecords2(**kwa)
@@ -116,7 +123,8 @@ class CswService(OwsService):
             "startposition": startposition,
             "maxrecords": page,
             "outputschema": namespaces[outputschema],
-            "cql":cql,
+            "cql": cql,
+            "sortby": self.sortby
             }
         i = 0
         matches = 0
