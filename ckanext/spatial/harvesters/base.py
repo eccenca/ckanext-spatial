@@ -34,7 +34,7 @@ from ckanext.spatial.interfaces import ISpatialHarvester
 
 log = logging.getLogger(__name__)
 
-DEFAULT_VALIDATOR_PROFILES = ['iso19139']
+DEFAULT_VALIDATOR_PROFILES = []
 
 
 def text_traceback():
@@ -202,8 +202,6 @@ class SpatialHarvester(HarvesterBase):
         :returns: A dataset dictionary (package_dict)
         :rtype: dict
         '''
-
-        #import ipdb; ipdb.set_trace()
 
         tags = []
         if 'tags' in iso_values:
