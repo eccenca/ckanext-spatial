@@ -76,6 +76,8 @@ class ISO19139Schema(XsdValidator):
             errors.insert(0, ('{0} Validation Error'.format(xsd_name), None))
         return is_valid, errors
 
+
+
 class ISO19139EdenSchema(XsdValidator):
     name = 'iso19139eden'
     title = 'ISO19139 XSD Schema (EDEN 2009-03-16)'
@@ -126,6 +128,41 @@ class ISO19139EdenSchema(XsdValidator):
         else:
             return 'dataset'
 
+
+class ISO19139LeSchema(ISO19139EdenSchema):
+    name = 'iso19139le'
+    title = 'ISO19139 XSD Schema (LE 13.11.2016)'
+
+    @classmethod
+    def is_valid(cls, xml):
+        xsd_path = 'xml/iso19139le'
+
+        metadata_type = cls.get_record_type(xml)
+
+        if metadata_type in ('dataset', 'series', 'application'):
+            gmx_xsd_filepath = os.path.join(os.path.dirname(__file__),
+                                            xsd_path, 'gmx/gmx.xsd')
+            xsd_name = 'Dataset schema (gmx.xsd)'
+            is_valid, errors = cls._is_valid(xml, gmx_xsd_filepath, xsd_name)
+            if not is_valid:
+                #TODO: not sure if we need this one, keeping for backwards compatibility
+                errors.insert(0, ('{0} Validation Error'.format(xsd_name), None))
+        elif metadata_type == 'service':
+            gmx_and_srv_xsd_filepath = os.path.join(os.path.dirname(__file__),
+                                                    xsd_path, 'gmx_and_srv.xsd')
+            xsd_name = 'Service schemas (gmx.xsd & srv.xsd)'
+            is_valid, errors = cls._is_valid(xml, gmx_and_srv_xsd_filepath, xsd_name)
+            if not is_valid:
+                #TODO: not sure if we need this one, keeping for backwards compatibility
+                errors.insert(0, ('{0} Validation Error'.format(xsd_name), None))
+        else:
+            is_valid = False
+            errors = [('Metadata type not recognised "%s" - cannot choose an ISO19139 validator.' %
+                      metadata_type, None)]
+        if is_valid:
+            return True, []
+
+        return False, errors
 
 
 class ISO19139NGDCSchema(XsdValidator):
@@ -294,6 +331,7 @@ class Gemini2Schematron13(SchematronValidator):
 
 all_validators = (ISO19139Schema,
                   ISO19139EdenSchema,
+                  ISO19139LeSchema,
                   ISO19139NGDCSchema,
                   FGDCSchema,
                   ConstraintsSchematron,
@@ -308,7 +346,7 @@ class Validators(object):
     '''
     def __init__(self, profiles=["iso19139", "constraints", "gemini2"]):
         self.profiles = profiles
-        
+
         self.validators = {} # name: class
         for validator_class in all_validators:
             self.validators[validator_class.name] = validator_class
