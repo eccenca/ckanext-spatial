@@ -34,7 +34,7 @@ from ckanext.spatial.interfaces import ISpatialHarvester
 
 log = logging.getLogger(__name__)
 
-DEFAULT_VALIDATOR_PROFILES = []
+DEFAULT_VALIDATOR_PROFILES = ["iso19139"]
 
 
 def text_traceback():
@@ -460,6 +460,11 @@ class SpatialHarvester(HarvesterBase):
             return False
 
         self._set_source_config(harvest_object.source.config)
+
+        #Set validator from the configuration
+        validator = self.source_config.get('validator', '')
+        if validator is not '':
+            config['ckan.spatial.validator.profiles'] = validator
 
         if self.force_import:
             status = 'change'
