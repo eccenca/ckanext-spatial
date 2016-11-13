@@ -461,7 +461,8 @@ class SpatialHarvester(HarvesterBase):
 
         self._set_source_config(harvest_object.source.config)
 
-        #Set validator from the configuration
+        # set validator from the configuration
+        # this will override default ini file ckan.spatial.validator.profiles
         validator = self.source_config.get('validator', '')
         if validator is not '':
             config['ckan.spatial.validator.profiles'] = validator
