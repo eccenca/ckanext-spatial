@@ -34,7 +34,7 @@ from ckanext.spatial.interfaces import ISpatialHarvester
 
 log = logging.getLogger(__name__)
 
-DEFAULT_VALIDATOR_PROFILES = ['iso19139']
+DEFAULT_VALIDATOR_PROFILES = ["iso19139"]
 
 
 def text_traceback():
@@ -202,8 +202,6 @@ class SpatialHarvester(HarvesterBase):
         :returns: A dataset dictionary (package_dict)
         :rtype: dict
         '''
-
-        #import ipdb; ipdb.set_trace()
 
         tags = []
         if 'tags' in iso_values:
@@ -462,6 +460,12 @@ class SpatialHarvester(HarvesterBase):
             return False
 
         self._set_source_config(harvest_object.source.config)
+
+        # set validator from the configuration
+        # this will override default ini file ckan.spatial.validator.profiles
+        validator = self.source_config.get('validator', '')
+        if validator is not '':
+            config['ckan.spatial.validator.profiles'] = validator
 
         if self.force_import:
             status = 'change'
