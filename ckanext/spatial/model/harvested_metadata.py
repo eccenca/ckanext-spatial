@@ -294,7 +294,7 @@ class ISOResponsibleParty(ISOElement):
                     ],
                     multiplicity="0..1",
                 ),
-                
+
 
             ]
         ),
@@ -574,7 +574,7 @@ class ISODocument(MappedXmlDocument):
             search_paths=[
                 "gmd:referenceSystemInfo/gmd:MD_ReferenceSystem/gmd:referenceSystemIdentifier/gmd:RS_Identifier/gmd:code/gco:CharacterString/text()",
             ],
-            multiplicity="0..1",
+            multiplicity="*",
         ),
         ISOElement(
             name="title",

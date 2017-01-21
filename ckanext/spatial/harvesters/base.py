@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import re
 import cgitb
 import warnings
@@ -36,6 +38,33 @@ log = logging.getLogger(__name__)
 
 DEFAULT_VALIDATOR_PROFILES = ["iso19139"]
 
+EPSG_CODES = {"31466": "Gauß-Krüger-System (Bessel), 2.Streifen",
+"31467": "Gauß-Krüger-System (Bessel), 3.Streifen",
+"31468": "Gauß-Krüger-System (Bessel), 4.Streifen",
+"31469": "Gauß-Krüger-System (Bessel), 5.Streifen",
+"25833": "ETRS 89, UTM-Abbildung, 33 Zone",
+"25832": "ETRS 89, UTM-Abbildung, 32 Zone",
+"3035": "ETRS 89, Lamberts flächentreue Azimutalabbildung (LAEA)",
+"3034": "ETRS 89, konforme konische Lambertabbildung (LCC)",
+"4258": "ETRS 89, lat/long (Geographische Koordinaten)",
+"3042": "ETRS 89, zylindrische TM-Abbildung, Zone 30",
+"102100": "WGS 84, Pseudo-Mercator (ESRI)",
+"3043": "ETRS 89, zylindrische TM-Abbildung, Zone 31",
+"3046": "ETRS 89, zylindrische TM-Abbildung, Zone 34",
+"3047": "ETRS 89, zylindrische TM-Abbildung, Zone 35",
+"3044": "ETRS 89, zylindrische TM-Abbildung, Zone 32",
+"3045": "ETRS 89, zylindrische TM-Abbildung, Zone 33",
+"4326": "WGS 84, lat/long (Geographische Koordinaten)",
+"5650": "ETRS89, UTM zone 33N (zE-N)",
+"3857": "WGS 84, Pseudo-Mercator",
+"3398": "Gauß-Krüger-System (RD83), 4.Streifen",
+"3399": "Gauß-Krüger-System (RD83), 5.Streifen",
+"2180": "ETRS89, Poland CS92",
+"5514": "S-JTSK, Krovak East North",
+"102067": "S-JTSK, Krovak East North (ESRI)",
+"3048": "ETRS 89, zylindrische TM-Abbildung, Zone 36",
+"30349": "ETRS 89, zylindrische TM-Abbildung, Zone 37",
+"30350": "ETRS 89, zylindrische TM-Abbildung, Zone 38"}
 
 def text_traceback():
     with warnings.catch_warnings():
@@ -248,7 +277,7 @@ class SpatialHarvester(HarvesterBase):
         # Just add some of the metadata as extras, not the whole lot
         for name in [
             # Essentials
-            'spatial-reference-system',
+            #'spatial-reference-system',
             'guid',
             # Usefuls
             'metadata-language',  # Language
@@ -259,6 +288,17 @@ class SpatialHarvester(HarvesterBase):
             'spatial-data-service-type',
         ]:
             extras[name] = iso_values[name]
+
+        for num, epsg_code in enumerate(iso_values["spatial-reference-system"]):
+            if num == 0:
+                extra_name = "spatial-reference-system"
+            else:
+                extra_name = "spatial-reference-system-"+str(num)
+            epsg_name = EPSG_CODES.get(epsg_code, "").decode("utf-8")
+            if epsg_name == "":
+                extras[extra_name] = epsg_code
+            else:
+                extras[extra_name] = epsg_name
 
         #Unpacking 'dataset-reference-date',
         for date in iso_values['dataset-reference-date']:
