@@ -287,6 +287,14 @@ class ISOResponsibleParty(ISOElement):
                     ],
                     multiplicity="0..1",
                 ),
+                ISOElement(
+                    name="city",
+                    search_paths=[
+                        "gmd:address/gmd:CI_Address/gmd:city/gco:CharacterString/text()",
+                    ],
+                    multiplicity="0..1",
+                ),
+                
 
             ]
         ),
@@ -906,6 +914,13 @@ class ISODocument(MappedXmlDocument):
             search_paths=[
                 "gmd:identificationInfo/gmd:MD_DataIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic",
                 "gmd:identificationInfo/srv:SV_ServiceIdentification/gmd:graphicOverview/gmd:MD_BrowseGraphic",
+            ],
+            multiplicity="*",
+        ),
+        ISOResponsibleParty(
+            name="responsible-organisation-le",
+            search_paths=[
+                "gmd:contact/gmd:CI_ResponsibleParty",
             ],
             multiplicity="*",
         ),

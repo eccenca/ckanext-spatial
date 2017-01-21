@@ -331,15 +331,17 @@ class SpatialHarvester(HarvesterBase):
         # Save responsible organization roles
         if iso_values['responsible-organisation']:
             parties = []
-            for organization in iso_values['responsible-organisation']:
+            for organization in iso_values['responsible-organisation-le']:
                 contactInfo = organization.get('contact-info', {})
                 party = {
-                    "Role": organization.get('role', ''),
+                    "Name": organization.get('individual-name', ''),
                     "Organisation": organization.get('organisation-name', ''),
+                    "Role": organization.get('role', ''),
                     "Position": organization.get('position-name', ''),
                     "Phone Number": contactInfo.get('phone', ''),
                     "Fax Number": contactInfo.get('facsimile', ''),
                     "Street Address": contactInfo.get('delivery-point', ''),
+                    "Postal Code": contactInfo.get('postal-code', ''),
                     "City": contactInfo.get('city', ''),
                     "Administrative Area": contactInfo.get('administrative-area', ''),
                     "Country": contactInfo.get('country', ''),
