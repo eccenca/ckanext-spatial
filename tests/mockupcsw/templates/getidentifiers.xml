@@ -1,0 +1,1060 @@
+<?xml version="1.0"?>
+<csw:GetRecordsResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2">
+  <csw:RequestId/>
+  <csw:SearchStatus/>
+  <csw:SearchResults numberOfRecordsMatched="3" numberOfRecordsReturned="3">
+    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">4e73fafe-3534-411e-98c7-765d385bd18d</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="ger"/>
+      </gmd:language>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Schulze, Heike</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung-GIS/Kartographie</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966132</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966232</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Stra\xc3\x9fe 63</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Heike.Schulze@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Gesch\xc3\xa4ftsstelle</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">+49 3591 67966 \xe2\x80\x93 0</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">+49 3591 67966 \xe2\x80\x93 69</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Str. 63</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">info@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>www.rpv-oberlausitz-niederschlesien.de</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">2017-07-28</gco:Date>
+      </gmd:dateStamp>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Vorbehaltsgebiet Trassensicherung Schienennetz</gco:CharacterString>
+              </gmd:title>
+              <gmd:alternateTitle>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">VBG Trassensicherung Schienennetz</gco:CharacterString>
+              </gmd:alternateTitle>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">2013-05-31</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">https://geoportal.sachsen.de/md/4e73fafe-3534-411e-98c7-765d385bd18d</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Grundsatz im Raumordnungsplan, mit dem nicht mehr f\xc3\xbcr den Schienenverkehr genutzte Trassenabschnitte vor einer dauerhaften Blockierung durch andere Nutzungen bzw. vor einer Zersplitterung der Grundst\xc3\xbccke raumordnerisch gesch\xc3\xbctzt werden sollen. Damit soll erreicht werden, dass bei einer k\xc3\xbcnftig wieder vorhandenen Nachfrage dieser Strecke f\xc3\xbcr den Schienenverkehr ein vereinfachtes Genehmigungsverfahren angewendet werden kann.\nDatenherkunft: -Planungsverband Region Chemnitz mit rechtlicher Grundlage Regionalplan Chemnitz-Erzgebirge, Fortschreibung (Stand 31.07.2008)</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Schulze, Heike</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung-GIS/Kartographie</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966132</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966232</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Stra\xc3\x9fe 63</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Heike.Schulze@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Maazaoui, Katrin</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberes Elbtal/Osterzgebirge</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 35140404720</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 35140404740</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Mei\xc3\x9fner Stra\xc3\x9fe 151 a</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Radebeul</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">01445</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Katrin.Maazaoui@rpv-oeoe.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Fickenwirth, Cornelia</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Planungsverband Region Chemnitz</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsgesch\xc3\xa4ftsstelle</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 37528940517</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 37528940590</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Zwickauer Stra\xc3\x9fe 16 a</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Zwickau</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">08056</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">cornelia.fickenwirth@pv-rc.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">http://www.geomis.sachsen.de:80/smartEditor/preview/EV_20_2.png</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Vorbehaltsgebiet Trassensicherung Schienennetz</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="ger"/>
+          </gmd:language>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>planningCadastre</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:extentTypeCode>
+                    <gco:Boolean xmlns:gco="http://www.isotc211.org/2005/gco">true</gco:Boolean>
+                  </gmd:extentTypeCode>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">11.67</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">15.05</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">50.00</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">51.80</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+    </gmd:MD_Metadata>
+    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">5c708173-8129-4b9e-a546-1617e251974b</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="ger"/>
+      </gmd:language>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Schulze, Heike</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung-GIS/Kartographie</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966132</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966232</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Stra\xc3\x9fe 63</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Heike.Schulze@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Gesch\xc3\xa4ftsstelle</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">+49 3591 67966 \xe2\x80\x93 0</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">+49 3591 67966 \xe2\x80\x93 69</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Str. 63</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">info@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>www.rpv-oberlausitz-niederschlesien.de</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">2017-07-28</gco:Date>
+      </gmd:dateStamp>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Vorranggebiet oberflaechennahe Rohstoffe</gco:CharacterString>
+              </gmd:title>
+              <gmd:alternateTitle>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">VRG oberflaechennahe Rohstoffe</gco:CharacterString>
+              </gmd:alternateTitle>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">2013-05-31</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">https://geoportal.sachsen.de/md/5c708173-8129-4b9e-a546-1617e251974b</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Ziel im Regionalplan zur Sicherung des kurz- (bis 20 Jahre), mittel- (20-40 Jahre) und langfristigen ( 40 Jahre) Bedarfs an verschiedenen Rohstoffen.\nDatenherkunft:- Regionaler Planungsverband Oberlausitz/Niederschlesien mit rechtlicher Grundlage Regionalplan, 1. Gesamtfortschreibung (Stand 04.02.2010)\n-Regionaler Planungsverband Oberes Elbtal/Osterzgebirge mit rechtlicher Grundlage Regionalplan, 1. Gesamtfortschreibung (Stand 19.11.2009)\n-Planungsverband Region Chemnitz mit rechtlicher Grundlage Regionalplan Chemnitz-Erzgebirge, Fortschreibung (Stand 31.07.2008) und Regionalplan S\xc3\xbcdwestsachsen, 1. Gesamtfortschreibung (Stand 06.10.2011)\n-Regionaler Planungsverband Leipzig-Westsachsen mit rechtlicher Grundlage Regionalplan Westsachsen 2008 (Stand 25.07.2008)</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Schulze, Heike</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung-GIS/Kartographie</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966132</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966232</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Stra\xc3\x9fe 63</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Heike.Schulze@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Maazaoui, Katrin</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberes Elbtal/Osterzgebirge</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 35140404720</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 35140404740</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Mei\xc3\x9fner Stra\xc3\x9fe 151 a</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Radebeul</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">01445</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Katrin.Maazaoui@rpv-oeoe.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Fickenwirth, Cornelia</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Planungsverband Region Chemnitz</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsgesch\xc3\xa4ftsstelle</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 37528940517</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 37528940590</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Zwickauer Stra\xc3\x9fe 16 a</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Zwickau</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">08056</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">cornelia.fickenwirth@pv-rc.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">http://www.geomis.sachsen.de:80/smartEditor/preview/RB_09_1.png</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Vorranggebiet oberflaechennahe Rohstoffe</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="ger"/>
+          </gmd:language>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>planningCadastre</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:extentTypeCode>
+                    <gco:Boolean xmlns:gco="http://www.isotc211.org/2005/gco">true</gco:Boolean>
+                  </gmd:extentTypeCode>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">11.67</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">15.05</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">50.00</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">51.80</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+    </gmd:MD_Metadata>
+    <gmd:MD_Metadata xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.isotc211.org/2005/gmd http://schemas.opengis.net/csw/2.0.2/profiles/apiso/1.0.0/apiso.xsd">
+      <gmd:fileIdentifier>
+        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">a9a13167-98ff-4405-bed7-6690db4620c4</gco:CharacterString>
+      </gmd:fileIdentifier>
+      <gmd:language>
+        <gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="ger"/>
+      </gmd:language>
+      <gmd:hierarchyLevel>
+        <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset"/>
+      </gmd:hierarchyLevel>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Schulze, Heike</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung-GIS/Kartographie</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966132</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966232</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Stra\xc3\x9fe 63</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Heike.Schulze@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:contact>
+        <gmd:CI_ResponsibleParty>
+          <gmd:individualName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Gesch\xc3\xa4ftsstelle</gco:CharacterString>
+          </gmd:individualName>
+          <gmd:organisationName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+          </gmd:organisationName>
+          <gmd:positionName>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung</gco:CharacterString>
+          </gmd:positionName>
+          <gmd:contactInfo>
+            <gmd:CI_Contact>
+              <gmd:phone>
+                <gmd:CI_Telephone>
+                  <gmd:voice>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">+49 3591 67966 \xe2\x80\x93 0</gco:CharacterString>
+                  </gmd:voice>
+                  <gmd:facsimile>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">+49 3591 67966 \xe2\x80\x93 69</gco:CharacterString>
+                  </gmd:facsimile>
+                </gmd:CI_Telephone>
+              </gmd:phone>
+              <gmd:address>
+                <gmd:CI_Address>
+                  <gmd:deliveryPoint>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Str. 63</gco:CharacterString>
+                  </gmd:deliveryPoint>
+                  <gmd:city>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                  </gmd:city>
+                  <gmd:administrativeArea>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                  </gmd:administrativeArea>
+                  <gmd:postalCode>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                  </gmd:postalCode>
+                  <gmd:country>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                  </gmd:country>
+                  <gmd:electronicMailAddress>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">info@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                  </gmd:electronicMailAddress>
+                </gmd:CI_Address>
+              </gmd:address>
+              <gmd:onlineResource>
+                <gmd:CI_OnlineResource>
+                  <gmd:linkage>
+                    <gmd:URL>www.rpv-oberlausitz-niederschlesien.de</gmd:URL>
+                  </gmd:linkage>
+                </gmd:CI_OnlineResource>
+              </gmd:onlineResource>
+            </gmd:CI_Contact>
+          </gmd:contactInfo>
+          <gmd:role>
+            <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+          </gmd:role>
+        </gmd:CI_ResponsibleParty>
+      </gmd:contact>
+      <gmd:dateStamp>
+        <gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">2017-07-28</gco:Date>
+      </gmd:dateStamp>
+      <gmd:identificationInfo>
+        <gmd:MD_DataIdentification>
+          <gmd:citation>
+            <gmd:CI_Citation>
+              <gmd:title>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Vorranggebiet Trassensicherung Eisenbahnstrecke ohne Personenverkehr</gco:CharacterString>
+              </gmd:title>
+              <gmd:alternateTitle>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">VRGt Trassensicherung Eisenbahnstrecke ohne Personenverkehr</gco:CharacterString>
+              </gmd:alternateTitle>
+              <gmd:date>
+                <gmd:CI_Date>
+                  <gmd:date>
+                    <gco:Date xmlns:gco="http://www.isotc211.org/2005/gco">2013-05-31</gco:Date>
+                  </gmd:date>
+                  <gmd:dateType>
+                    <gmd:CI_DateTypeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="publication"/>
+                  </gmd:dateType>
+                </gmd:CI_Date>
+              </gmd:date>
+              <gmd:identifier>
+                <gmd:MD_Identifier>
+                  <gmd:code>
+                    <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">https://geoportal.sachsen.de/md/a9a13167-98ff-4405-bed7-6690db4620c4</gco:CharacterString>
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:identifier>
+            </gmd:CI_Citation>
+          </gmd:citation>
+          <gmd:abstract>
+            <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Ziel im Raumordnungsplan, mit dem bestehende Eisenbahnstrecken, die nicht mehr f\xc3\xbcr den Personenverkehr genutzt werden, vor einer Entwidmung (Freistellung von Bahnbetriebszwecken) gesch\xc3\xbctzt werden sollen.\nDatenherkunft:- Regionaler Planungsverband Oberlausitz/Niederschlesien mit rechtlicher Grundlage Regionalplan, 1. Gesamtfortschreibung (Stand 04.02.2010)</gco:CharacterString>
+          </gmd:abstract>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Schulze, Heike</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberlausitz-Niederschlesien</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsverwaltung-GIS/Kartographie</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966132</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 3591 67966232</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">L\xc3\xb6bauer Stra\xc3\x9fe 63</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Bautzen</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">02625</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Heike.Schulze@rpv-oberlausitz-niederschlesien.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Maazaoui, Katrin</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Regionaler Planungsverband Oberes Elbtal/Osterzgebirge</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 35140404720</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 35140404740</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Mei\xc3\x9fner Stra\xc3\x9fe 151 a</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Radebeul</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">01445</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Katrin.Maazaoui@rpv-oeoe.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:pointOfContact>
+            <gmd:CI_ResponsibleParty>
+              <gmd:individualName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Fickenwirth, Cornelia</gco:CharacterString>
+              </gmd:individualName>
+              <gmd:organisationName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Planungsverband Region Chemnitz</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:positionName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Verbandsgesch\xc3\xa4ftsstelle</gco:CharacterString>
+              </gmd:positionName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <gmd:CI_Telephone>
+                      <gmd:voice>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 37528940517</gco:CharacterString>
+                      </gmd:voice>
+                      <gmd:facsimile>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">0049 37528940590</gco:CharacterString>
+                      </gmd:facsimile>
+                    </gmd:CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <gmd:CI_Address>
+                      <gmd:deliveryPoint>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Zwickauer Stra\xc3\x9fe 16 a</gco:CharacterString>
+                      </gmd:deliveryPoint>
+                      <gmd:city>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Zwickau</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:administrativeArea>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Freistaat Sachsen</gco:CharacterString>
+                      </gmd:administrativeArea>
+                      <gmd:postalCode>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">08056</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">Deutschland</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">cornelia.fickenwirth@pv-rc.de</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                    </gmd:CI_Address>
+                  </gmd:address>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact">pointOfContact</gmd:CI_RoleCode>
+              </gmd:role>
+            </gmd:CI_ResponsibleParty>
+          </gmd:pointOfContact>
+          <gmd:graphicOverview>
+            <gmd:MD_BrowseGraphic>
+              <gmd:fileName>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">http://www.geomis.sachsen.de:80/smartEditor/preview/EV_20_4.png</gco:CharacterString>
+              </gmd:fileName>
+              <gmd:fileDescription>
+                <gco:CharacterString xmlns:gco="http://www.isotc211.org/2005/gco">VRGt Trassensicherung Eisenbahnstrecke ohne Personenverkehr</gco:CharacterString>
+              </gmd:fileDescription>
+            </gmd:MD_BrowseGraphic>
+          </gmd:graphicOverview>
+          <gmd:language>
+            <gmd:LanguageCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#LanguageCode" codeListValue="ger"/>
+          </gmd:language>
+          <gmd:topicCategory>
+            <gmd:MD_TopicCategoryCode>planningCadastre</gmd:MD_TopicCategoryCode>
+          </gmd:topicCategory>
+          <gmd:extent>
+            <gmd:EX_Extent>
+              <gmd:geographicElement>
+                <gmd:EX_GeographicBoundingBox>
+                  <gmd:extentTypeCode>
+                    <gco:Boolean xmlns:gco="http://www.isotc211.org/2005/gco">true</gco:Boolean>
+                  </gmd:extentTypeCode>
+                  <gmd:westBoundLongitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">11.67</gco:Decimal>
+                  </gmd:westBoundLongitude>
+                  <gmd:eastBoundLongitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">15.05</gco:Decimal>
+                  </gmd:eastBoundLongitude>
+                  <gmd:southBoundLatitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">50.00</gco:Decimal>
+                  </gmd:southBoundLatitude>
+                  <gmd:northBoundLatitude>
+                    <gco:Decimal xmlns:gco="http://www.isotc211.org/2005/gco">51.80</gco:Decimal>
+                  </gmd:northBoundLatitude>
+                </gmd:EX_GeographicBoundingBox>
+              </gmd:geographicElement>
+            </gmd:EX_Extent>
+          </gmd:extent>
+        </gmd:MD_DataIdentification>
+      </gmd:identificationInfo>
+    </gmd:MD_Metadata>
+  </csw:SearchResults>
+</csw:GetRecordsResponse>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<csw:GetRecords xmlns:atom="http://www.w3.org/2005/Atom" xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/" xmlns:dif="http://gcmd.gsfc.nasa.gov/Aboutus/xml/dif/" xmlns:draw="gov.usgs.cida.gdp.draw" xmlns:fes="http://www.opengis.net/fes/2.0" xmlns:fgdc="http://www.opengis.net/cat/csw/csdgm" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gml="http://www.opengis.net/gml" xmlns:gml311="http://www.opengis.net/gml" xmlns:gml32="http://www.opengis.net/gml/3.2" xmlns:gmx="http://www.isotc211.org/2005/gmx" xmlns:gts="http://www.isotc211.org/2005/gts" xmlns:ogc="http://www.opengis.net/ogc" xmlns:om="http://www.opengis.net/om/1.0" xmlns:om10="http://www.opengis.net/om/1.0" xmlns:om100="http://www.opengis.net/om/1.0" xmlns:om20="http://www.opengis.net/om/2.0" xmlns:ows="http://www.opengis.net/ows" xmlns:ows100="http://www.opengis.net/ows" xmlns:ows110="http://www.opengis.net/ows/1.1" xmlns:ows200="http://www.opengis.net/ows/2.0" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rim="urn:oasis:names:tc:ebxml-regrep:xsd:rim:3.0" xmlns:sml="http://www.opengis.net/sensorML/1.0.1" xmlns:sml101="http://www.opengis.net/sensorML/1.0.1" xmlns:sos="http://www.opengis.net/sos/1.0" xmlns:sos20="http://www.opengis.net/sos/2.0" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:swe="http://www.opengis.net/swe/1.0.1" xmlns:swe10="http://www.opengis.net/swe/1.0" xmlns:swe101="http://www.opengis.net/swe/1.0.1" xmlns:swe20="http://www.opengis.net/swe/2.0" xmlns:swes="http://www.opengis.net/swes/2.0" xmlns:tml="ttp://www.opengis.net/tml" xmlns:wcs="http://www.opengis.net/wcs" xmlns:wfs="http://www.opengis.net/wfs" xmlns:wfs20="http://www.opengis.net/wfs/2.0" xmlns:wps="http://www.opengis.net/wps/1.0.0" xmlns:wps100="http://www.opengis.net/wps/1.0.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xs2="http://www.w3.org/XML/Schema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" outputSchema="http://www.isotc211.org/2005/gmd" outputFormat="application/xml" version="2.0.2" service="CSW" resultType="results" maxRecords="10" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:Query typeNames="csw:Record">
+    <csw:ElementSetName>brief</csw:ElementSetName>
+    <csw:Constraint version="1.1.0">
+      <ogc:Filter>
+        <ogc:Or>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>dc:identifier</ogc:PropertyName>
+            <ogc:Literal>4e73fafe-3534-411e-98c7-765d385bd18d</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>dc:identifier</ogc:PropertyName>
+            <ogc:Literal>5c708173-8129-4b9e-a546-1617e251974b</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+          <ogc:PropertyIsEqualTo>
+            <ogc:PropertyName>dc:identifier</ogc:PropertyName>
+            <ogc:Literal>a9a13167-98ff-4405-bed7-6690db4620c4</ogc:Literal>
+          </ogc:PropertyIsEqualTo>
+        </ogc:Or>
+      </ogc:Filter>
+    </csw:Constraint>
+    <ogc:SortBy>
+      <ogc:SortProperty>
+        <ogc:PropertyName>dc:identifier</ogc:PropertyName>
+        <ogc:SortOrder>ASC</ogc:SortOrder>
+      </ogc:SortProperty>
+    </ogc:SortBy>
+  </csw:Query>
+</csw:GetRecords>

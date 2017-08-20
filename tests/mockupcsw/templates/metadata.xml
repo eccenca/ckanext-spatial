@@ -1,0 +1,340 @@
+<csw:Capabilities xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:ogc="http://www.opengis.net/ogc" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:ows="http://www.opengis.net/ows" xmlns:ins="http://inspire.ec.europa.eu/schemas/common/1.0" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:gml="http://www.opengis.net/gml" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0.2" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+	<ows:ServiceIdentification>
+		<ows:Title>CSW GeoSN</ows:Title>
+		<ows:Abstract/>
+		<ows:Keywords>
+			<ows:Keyword>CS-W</ows:Keyword>
+			<ows:Keyword>ISO19119</ows:Keyword>
+			<ows:Keyword>ISO19115</ows:Keyword>
+			<ows:Keyword>Catalog Service</ows:Keyword>
+			<ows:Keyword>metadata</ows:Keyword>
+			<ows:Keyword>INSPIRE</ows:Keyword>
+			<ows:Type codeSpace="http://www.conterra.de">theme</ows:Type>
+		</ows:Keywords>
+		<ows:ServiceType>CSW</ows:ServiceType>
+		<ows:ServiceTypeVersion>2.0.0</ows:ServiceTypeVersion>
+		<ows:ServiceTypeVersion>2.0.2</ows:ServiceTypeVersion>
+        <ows:Fees>none</ows:Fees>
+        <ows:AccessConstraints>none</ows:AccessConstraints>
+	</ows:ServiceIdentification>
+	<ows:ServiceProvider>
+		<ows:ProviderName/>
+		<ows:ProviderSite xlink:href="" xlink:type="simple"/>
+		<ows:ServiceContact>
+			<ows:IndividualName/>
+			<ows:PositionName/>
+			<ows:ContactInfo>
+				<ows:Phone>
+					<ows:Voice/>
+					<ows:Facsimile/>
+				</ows:Phone>
+				<ows:Address>
+					<ows:DeliveryPoint/>
+					<ows:City/>
+					<ows:AdministrativeArea/>
+					<ows:PostalCode/>
+					<ows:Country/>
+					<ows:ElectronicMailAddress/>
+				</ows:Address>
+				<ows:OnlineResource xlink:href=""/>
+			</ows:ContactInfo>
+            <ows:Role>owner</ows:Role>
+		</ows:ServiceContact>
+	</ows:ServiceProvider>
+	<ows:OperationsMetadata>
+		<ows:Operation name="GetCapabilities">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup?"/>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/services/CSWDiscovery">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="AcceptVersions">
+				<ows:Value>2.0.0</ows:Value>
+				<ows:Value>2.0.2</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="Sections">
+				<ows:Value/>
+			</ows:Parameter>
+		</ows:Operation>
+		<ows:Operation name="GetRecords">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/services/CSWDiscovery">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="typeName">
+				<ows:Value>gmd:MD_Metadata</ows:Value>
+				<ows:Value>csw:Record</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="outputFormat">
+				<ows:Value>application/xml</ows:Value>
+				<ows:Value>text/xml</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="outputSchema">
+				<ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>
+				<ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>
+				<ows:Value>csw:profile</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="resultType">
+				<ows:Value>hits</ows:Value>
+				<ows:Value>results</ows:Value>
+				<ows:Value>validate</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="ElementSetName">
+				<ows:Value>brief</ows:Value>
+				<ows:Value>summary</ows:Value>
+				<ows:Value>full</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="CONSTRAINTLANGUAGE">
+				<ows:Value>Filter</ows:Value>				
+			</ows:Parameter>
+			<ows:Constraint name="SupportedISOQueryables">
+				<ows:Value>RevisionDate</ows:Value>
+				<ows:Value>AlternateTitle</ows:Value>
+				<ows:Value>CreationDate</ows:Value>
+				<ows:Value>PublicationDate</ows:Value>
+				<ows:Value>OrganisationName</ows:Value>
+				<ows:Value>HasSecurityConstraints</ows:Value>
+				<ows:Value>Language</ows:Value>
+				<ows:Value>ResourceIdentifier</ows:Value>
+				<ows:Value>ParentIdentifier</ows:Value>
+				<ows:Value>KeywordType</ows:Value>
+				<ows:Value>TopicCategory</ows:Value>
+				<ows:Value>ResourceLanguage</ows:Value>
+				<ows:Value>GeographicDescriptionCode</ows:Value>
+				<ows:Value>DistanceValue</ows:Value>
+				<ows:Value>DistanceUOM</ows:Value>
+				<ows:Value>TempExtent_begin</ows:Value>
+				<ows:Value>TempExtent_end</ows:Value>
+				<ows:Value>ServiceType</ows:Value>
+				<ows:Value>ServiceTypeVersion</ows:Value>
+				<ows:Value>Operation</ows:Value>
+				<ows:Value>CouplingType</ows:Value>
+				<ows:Value>OperatesOn</ows:Value>
+				<ows:Value>Denominator</ows:Value>
+				<ows:Value>OperatesOnIdentifier</ows:Value>
+				<ows:Value>OperatesOnWithOpName</ows:Value>
+			</ows:Constraint>
+			<ows:Constraint name="AdditionalQueryables">
+				<ows:Value>HierarchyLevelName</ows:Value>
+				<ows:Value>Degree</ows:Value>
+				<ows:Value>ConditionApplyingToAccessAndUse</ows:Value>
+				<ows:Value>MetadataPointOfContact</ows:Value>
+				<ows:Value>Lineage</ows:Value>
+				<ows:Value>SpecificationTitle</ows:Value>
+				<ows:Value>SpecificationDate</ows:Value>
+				<ows:Value>SpecificationDateType</ows:Value>
+				<ows:Value>AccessConstraints</ows:Value>
+				<ows:Value>OtherConstraints</ows:Value>
+				<ows:Value>Classification</ows:Value>
+				<ows:Value>ResponsiblePartyRole</ows:Value>
+                <ows:Value>ResourceIdentifierCodeSpace</ows:Value>
+			</ows:Constraint>
+			<!-- enter the supported federated catalogues for distributed search as values below -->
+			<ows:Constraint name="FederatedCatalogues"><ows:Value>http://www.ltv.sachsen.de/geonetwork/csw?</ows:Value><ows:Value>GeoMIS.Forst</ows:Value><ows:Value>http://kommisdd.dresden.de:80/geonetwork/srv/en/csw</ows:Value><ows:Value>http://www.geokatalog-mittelsachsen.de/geonetwork2.10/srv/eng/csw</ows:Value><ows:Value>http://gis.pirna.de/geonetwork/srv/eng/csw</ows:Value><ows:Value>http://csw-sachsen.idu.de/geonetwork/srv/eng/csw</ows:Value></ows:Constraint>
+
+
+		</ows:Operation>
+		<ows:Operation name="GetRecordById">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Get xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup?"/>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/services/CSWDiscovery">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="ElementSetName">
+				<ows:Value>brief</ows:Value>
+				<ows:Value>summary</ows:Value>
+				<ows:Value>full</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="outputSchema">
+				<ows:Value>http://www.opengis.net/cat/csw/2.0.2</ows:Value>
+				<ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>
+				<ows:Value>csw:profile</ows:Value>
+			</ows:Parameter>
+		</ows:Operation>
+		<ows:Operation name="DescribeRecord">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/services/CSWDiscovery">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+			<ows:Parameter name="typeName">
+				<ows:Value>gmd:MD_Metadata</ows:Value>
+				<ows:Value>csw:Record</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="outputFormat">
+				<ows:Value>application/xml</ows:Value>
+			</ows:Parameter>
+			<ows:Parameter name="schemaLanguage">
+				<ows:Value>http://www.w3.org/XML/Schema</ows:Value>
+			</ows:Parameter>
+		</ows:Operation>
+		<ows:Operation name="GetDomain">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/services/CSWDiscovery">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+		</ows:Operation>
+        <!--todo: transaction und harves werden vermutlich herausgenommen-->
+		<ows:Operation name="Transaction">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="${csw.external.manager.url}">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+						<ows:Constraint name="Security">
+							<ows:Value>true</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+						<ows:Constraint name="Security">
+							<ows:Value>false</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+		</ows:Operation>
+		<ows:Operation name="Harvest">
+			<ows:DCP>
+				<ows:HTTP>
+					<ows:Post xlink:href="${csw.external.manager.url}">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>SOAP</ows:Value>
+						</ows:Constraint>
+						<ows:Constraint name="Security">
+							<ows:Value>true</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+					<ows:Post xlink:href="http://www.geomis.sachsen.de/soapServices/CSWStartup">
+						<ows:Constraint name="PostEncoding">
+							<ows:Value>XML</ows:Value>
+						</ows:Constraint>
+						<ows:Constraint name="Security">
+							<ows:Value>false</ows:Value>
+						</ows:Constraint>
+					</ows:Post>
+				</ows:HTTP>
+			</ows:DCP>
+		</ows:Operation>
+			<ows:Constraint name="PostEncoding">
+				<ows:Value>SOAP</ows:Value>
+			</ows:Constraint>
+		<ows:Constraint name="IsoProfiles">
+			<ows:Value>http://www.isotc211.org/2005/gmd</ows:Value>
+			<ows:Value>http://schemas.opengis.net/iso19115full</ows:Value>
+		</ows:Constraint>
+		<ows:Constraint name="WSDL">
+			<ows:Value>http://www.geomis.sachsen.de/soapServices/services/CSWDiscovery?wsdl</ows:Value>
+		</ows:Constraint>
+		<ows:ExtendedCapabilities>
+			<ins:SupportedLanguages>
+				<ins:DefaultLanguage>
+					<ins:Language>ger</ins:Language>
+				</ins:DefaultLanguage>
+			<ins:SupportedLanguage><ins:Language>ger</ins:Language></ins:SupportedLanguage></ins:SupportedLanguages><ins:ResponseLanguage><ins:Language>ger</ins:Language></ins:ResponseLanguage>
+		<!-- for multilingual catalogues, define additional supported languages here with link to respective capabilities -->
+		<!--
+			<ins:MultilingualCapabilities xmlns:ins="http://www.inspire.org">
+				<ins:Languages>
+					<ins:Language>GER</ins:Language>
+				</ins:Languages>
+				<ins:TranslatedCapabilities>
+					<ins:Document xlink:href="http://www.somehost.com/Cababilities_german.xml" language="GER"/>
+				</ins:TranslatedCapabilities>
+			</ins:MultilingualCapabilities>
+		-->
+		</ows:ExtendedCapabilities>
+	</ows:OperationsMetadata>
+	<ogc:Filter_Capabilities>
+		<ogc:Spatial_Capabilities>
+			<ogc:GeometryOperands>
+				<ogc:GeometryOperand>gml:Envelope</ogc:GeometryOperand>
+				<ogc:GeometryOperand>gml:Point</ogc:GeometryOperand>
+				<ogc:GeometryOperand>gml:LineString</ogc:GeometryOperand>
+				<ogc:GeometryOperand>gml:Polygon</ogc:GeometryOperand>
+			</ogc:GeometryOperands>
+			<ogc:SpatialOperators>
+				<ogc:SpatialOperator name="BBOX"/>
+				<ogc:SpatialOperator name="Beyond"/>
+				<ogc:SpatialOperator name="Contains"/>
+				<ogc:SpatialOperator name="Crosses"/>
+				<ogc:SpatialOperator name="Disjoint"/>
+				<ogc:SpatialOperator name="DWithin"/>
+				<ogc:SpatialOperator name="Equals"/>
+				<ogc:SpatialOperator name="Intersects"/>
+				<ogc:SpatialOperator name="Overlaps"/>
+				<ogc:SpatialOperator name="Touches"/>
+				<ogc:SpatialOperator name="Within"/>
+			</ogc:SpatialOperators>
+		</ogc:Spatial_Capabilities>
+		<ogc:Scalar_Capabilities>
+			<ogc:LogicalOperators/>
+			<ogc:ComparisonOperators>
+				<ogc:ComparisonOperator>Between</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>EqualTo</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>GreaterThan</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>GreaterThanEqualTo</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>LessThan</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>LessThanEqualTo</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>Like</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>NotEqualTo</ogc:ComparisonOperator>
+				<ogc:ComparisonOperator>NullCheck</ogc:ComparisonOperator>
+			</ogc:ComparisonOperators>
+		</ogc:Scalar_Capabilities>
+		<ogc:Id_Capabilities>
+			<ogc:FID/>
+		</ogc:Id_Capabilities>
+	</ogc:Filter_Capabilities>
+</csw:Capabilities>

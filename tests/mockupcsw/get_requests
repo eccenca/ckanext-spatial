@@ -1,0 +1,4 @@
+http://www.geomis.sachsen.de/soapServices/CSWStartup?version=2.0.2&request=GetCapabilities&service=CSW
+http://www.geomis.sachsen.de/soapServices/CSWStartup?outputFormat=application%2Fxml&service=CSW&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&request=GetRecordById&version=2.0.2&elementsetname=full&id=4e73fafe-3534-411e-98c7-765d385bd18d
+http://www.geomis.sachsen.de/soapServices/CSWStartup?outputFormat=application%2Fxml&service=CSW&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&request=GetRecordById&version=2.0.2&elementsetname=full&id=5c708173-8129-4b9e-a546-1617e251974b
+http://www.geomis.sachsen.de/soapServices/CSWStartup?outputFormat=application%2Fxml&service=CSW&outputSchema=http%3A%2F%2Fwww.isotc211.org%2F2005%2Fgmd&request=GetRecordById&version=2.0.2&elementsetname=full&id=a9a13167-98ff-4405-bed7-6690db4620c4
