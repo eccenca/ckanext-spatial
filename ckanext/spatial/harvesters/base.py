@@ -710,6 +710,14 @@ class SpatialHarvester(HarvesterBase):
                 package_schema['tags'] = tag_schema
                 context['schema'] = package_schema
 
+                existing_package_dict = logic.get_action('package_show')(context,
+                    {'id': harvest_object.package_id})
+                immutable_resources = self._get_immutable_resources(existing_package_dict)
+                for resource in immutable_resources:
+                    if not "resources" in package_dict:
+                        package_dict["resources"] = []
+                    package_dict["resources"].append(resource)
+
                 package_dict['id'] = harvest_object.package_id
                 try:
                     package_id = p.toolkit.get_action('package_update')(context, package_dict)
@@ -722,6 +730,19 @@ class SpatialHarvester(HarvesterBase):
 
         return True
     ##
+
+    def _get_immutable_resources(self, package_dict):
+        immutable_resources = []
+        immutable_formats = [
+            "immutable",
+            "unwandelbar"
+        ]
+        if not "resources" in package_dict:
+            return immutable_resources
+        for resource in package_dict["resources"]:
+            if resource["format"] in immutable_formats:
+                immutable_resources.append(resource)
+        return immutable_resources
 
     def _is_wms(self, url):
         '''
