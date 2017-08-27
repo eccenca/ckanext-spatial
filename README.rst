@@ -23,6 +23,15 @@ Full documentation, including installation instructions, can be found at:
 
 http://docs.ckan.org/projects/ckanext-spatial
 
+Installation
+---------
+```
+psql -d ckan -f /usr/share/postgresql/9.6/contrib/postgis-2.3/postgis.sql
+psql -d ckan -f /usr/share/postgresql/9.6/contrib/postgis-2.3/spatial_ref_sys.sql
+psql -d ckan -c 'ALTER TABLE geometry_columns OWNER TO ckan;'
+psql -d ckan -c 'ALTER TABLE spatial_ref_sys OWNER TO ckan;'
+psql -d ckan -c "SELECT postgis_full_version()"
+```
 
 Community
 ---------
@@ -55,4 +64,3 @@ http://www.fsf.org/licensing/licenses/agpl-3.0.html
 .. _pycsw: http://pycsw.org
 .. _GeoJSON: http://geojson.org
 .. _ckanext-geoview: https://github.com/ckan/ckanext-geoview
-
