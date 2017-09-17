@@ -713,10 +713,18 @@ class SpatialHarvester(HarvesterBase):
                 existing_package_dict = logic.get_action('package_show')(context,
                     {'id': harvest_object.package_id})
                 immutable_resources = self._get_immutable_resources(existing_package_dict)
+                # Don't add resource with existing URL to the package_dict
+                existing_urls = map(lambda x: x["url"], immutable_resources)
+                package_dict["resources"] = [
+                    resource for resource in package_dict["resources"]
+                    if not resource["url"] in existing_urls
+                ]
+                # Add immutable resource to package_dict
                 for resource in immutable_resources:
                     if not "resources" in package_dict:
                         package_dict["resources"] = []
                     package_dict["resources"].append(resource)
+
 
                 package_dict['id'] = harvest_object.package_id
                 try:
@@ -733,14 +741,10 @@ class SpatialHarvester(HarvesterBase):
 
     def _get_immutable_resources(self, package_dict):
         immutable_resources = []
-        immutable_formats = [
-            "immutable",
-            "unwandelbar"
-        ]
         if not "resources" in package_dict:
             return immutable_resources
         for resource in package_dict["resources"]:
-            if resource["format"] in immutable_formats:
+            if "immutable" in resource and resource["immutable"] == "checked":
                 immutable_resources.append(resource)
         return immutable_resources
 
